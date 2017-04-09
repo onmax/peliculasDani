@@ -56,12 +56,15 @@
 
 .title{
   font-size: 20px;
+  max-width: 250px;
 }
 
 .caracteristicas{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 12px;
+  text-decoration: none;
 }
 
 .flags{
@@ -95,10 +98,11 @@
   border: 0;
   display: flex;
   margin: auto;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   transition: 0.3s;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .footer i{
