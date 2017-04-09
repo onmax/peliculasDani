@@ -11,7 +11,7 @@ var limite = 0;
 
 next.addEventListener("click", function(){
   aux -= ancho;
-  if(aux - ancho >=carteles.width()*(-1) && limite != 0){
+  if(aux - ancho >=carteles.width()*(-1)){
     sliderContent.style.transform = 'translateX(' + aux + 'px)';
   }else{
     aux = carteles.width()*(-1) + ancho_real - 10;
