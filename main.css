@@ -18,3 +18,8 @@ body{
   justify-content: center;
   margin: auto;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

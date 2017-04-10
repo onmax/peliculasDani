@@ -1,7 +1,6 @@
 .populares_title{
   padding-top: 20px;
 }
-
 .slider-frame{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -10,7 +9,6 @@
   cursor: pointer;
   animation: fadein 1s;
   overflow: hidden;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
 .slider-container, .carteles{
@@ -22,6 +20,11 @@
 
 }
 
+.img_slider{
+  width: 182px;
+  height: 268  px;
+}
+
 .btn{
   position: absolute;
   color: white;
@@ -30,21 +33,32 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.15);
+  height: 268px;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 0 20px;
   transition: 0.3s;
+  color: #1976d2;
 }
 
 .btn:hover{
-  background-color: rgba(255, 255, 255, 0.25);
+  color: #01579b;
+  background-color: rgba(255, 255, 255, 0.9);
   transition: 0.3s;
 }
 
 .prev{
   left: 0;
+  visibility: hidden;
+  transition: .5s;
 }
 
 .next{
   right: 0;
+  
+}
+
+hr{
+  margin-top: 15px;
+  background-color: rgba(0,0,0,0.3);
+  height: .5px;
 }

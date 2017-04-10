@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="peliculas.css">
   <link rel="stylesheet" href="select_menu.css">
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
@@ -26,7 +27,7 @@
       <div class="parametros">
         <div class="select">
           <select class="select_menu" name="Categorías">
-            <div class="v" ><option value="todas" selected>Categorías</option></div>
+            <div class="v categ" ><option value="todas" selected>Categorías</option></div>
             <option class="v" value="todas">TV Shows</option>
             <option class="v" value="todas">Acción</option>
             <option class="v" value="todas">Ganadores de algún premio</option>
@@ -46,6 +47,9 @@
           <div class="fa fa-caret-down down_arrow"></div>
         </div>
         </div>
+      </div>
+      <div class="login">
+        <div class="fa fa-user icon_login"></div>
       </div>
     </div>
   </header>
@@ -73,11 +77,15 @@
           <section><a href=""><div class="slide"><img class="img_slider" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxNTk1ODcxNl5BMl5BanBnXkFtZTcwMDI1OTMzOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" ></div></a></section>
           <section><a href=""><div class="slide"><img class="img_slider" src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTgxMDQwMDk0OF5BMl5BanBnXkFtZTgwNjU5OTg2NDE@._V1_UX182_CR0,0,182,268_AL_.jpg" ></div></a></section>
           <section><a href=""><div class="slide"><img class="img_slider" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTc5Mzg3NjI4OF5BMl5BanBnXkFtZTgwNzA3Mzg4MDI@._V1_UX182_CR0,0,182,268_AL_.jpg" ></div></a></section>
+          <section><a href=""><div class="slide"><img class="img_slider" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNzQ0NDgwODQ3NV5BMl5BanBnXkFtZTgwOTYxNjc2ODE@._V1_UX182_CR0,0,182,268_AL_.jpg" ></div></a></section>
+          <section><a href=""><div class="slide"><img class="img_slider" src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTFmNDA3ZjMtN2Y0MC00NDYyLWFlY2UtNTQ4OTQxMmY1NmVjXkEyXkFqcGdeQXVyNTg4NDQ4NDY@._V1_UX182_CR0,0,182,268_AL_.jpg" ></div></a></section>
+          <section><a href=""><div class="slide"><img class="img_slider" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_UX182_CR0,0,182,268_AL_.jpg" ></div></a></section>
         </div>
-        <div class="btn prev"><i class="fa fa-arrow-left"></i></div>
+        <div class="btn prev" id="prev"><i class="fa fa-arrow-left"></i></div>
         <div class="btn next" id="next"><i class="fa fa-arrow-right"></i></div>
       </div>
   </div>
+  <hr>
   <script src="slider.js" charset="utf-8"></script>
 
 <div class="busqueda">
@@ -101,7 +109,7 @@
       Es una película que está chula. Esta frase no dirá nada porque es para rellenar. Saludos.
     </div>
     <a href="#LINK">
-      <div class="footer">
+      <div class="footer_img">
         <h3 class="fa fa-download"> DESCARGAR TORRENT</h3>
         <div class="caracteristicas">
           <h4>Micro HD 1080</h4>
@@ -129,7 +137,7 @@
       Es una película que está chula. Esta frase no dirá nada porque es para rellenar. Saludos.
     </div>
     <a href="#LINK">
-      <div class="footer">
+      <div class="footer_img">
         <i class="fa fa-download"> DESCARGAR TORRENT</i>
       </div>
     </a>
@@ -153,7 +161,7 @@
       Es una película que está chula. Esta frase no tiene sentido...
     </div>
     <a href="#LINK">
-      <div class="footer">
+      <div class="footer_img">
         <i class="fa fa-download"> DESCARGAR TORRENT</i>
       </div>
     </a>
@@ -177,7 +185,7 @@
       Es una película que está chula. Esta frase no dirá nada porque es para rellenar. Saludos.
     </div>
     <a href="#LINK">
-      <div class="footer">
+      <div class="footer_img">
         <i class="fa fa-download"> DESCARGAR TORRENT</i>
       </div>
     </a>
@@ -201,7 +209,7 @@
       Es una película que está chula. Esta frase no dirá nada porque es para rellenar. Saludos.
     </div>
     <a href="#LINK">
-      <div class="footer">
+      <div class="footer_img">
         <i class="fa fa-download"> DESCARGAR TORRENT</i>
       </div>
     </a>
@@ -226,7 +234,7 @@
       Es una película que está chula. Esta frase no dirá nada porque es para rellenar. Saludos.
     </div>
     <a href="#LINK">
-      <div class="footer">
+      <div class="footer_img">
         <i class="fa fa-download">DESCARGAR TORRENT</i>
       </div>
     </a>
@@ -253,7 +261,7 @@
       Es una película que está chula. Esta frase no dirá nada porque es para rellenar. Saludos.
     </div>
     <a href="#LINK">
-      <div class="footer">
+      <div class="footer_img">
         <i class="fa fa-download"> DESCARGAR TORRENT</i>
       </div>
     </a>
@@ -277,7 +285,7 @@
       Es una película que está chula. Esta frase no dirá nada porque es para rellenar. Saludos.
     </div>
     <a href="#LINK">
-      <div class="footer">
+      <div class="footer_img">
         <i class="fa fa-download"> DESCARGAR TORRENT</i>
       </div>
     </a>
@@ -285,5 +293,12 @@
 </div>
 </div>
 </div>
+
+<footer>
+  <div class="footer">
+    <div class="fa fa-twitter rrss tw"></div>
+    <div class="fa fa-facebook rrss fb"></div>
+  </div>
+</footer>
 </body>
 </html>

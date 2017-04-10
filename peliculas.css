@@ -89,7 +89,7 @@
   color: #1565c0;
 }
 
-.footer{
+.footer_img{
   padding: 10px;
   font-family: Roboto;
   font-size: 18px;
@@ -105,17 +105,12 @@
   text-decoration: none;
 }
 
-.footer i{
+.footer_img i{
   text-decoration: none;
 }
 
-.footer:hover{
+.footer_img:hover{
   background-color: #1565c0;
   color: #fff;
   transition: 0.3s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }

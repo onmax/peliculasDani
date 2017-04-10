@@ -19,10 +19,4 @@
 }
 .v{
   font-size: 16px;
-  height: 200px;
-}
-
-.v:hover{
-  background-color: #00bcd4;
-  color: white;
 }

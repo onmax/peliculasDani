@@ -5,7 +5,7 @@
   animation: fadein .5s;
   transition: .5s;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
 }
 
@@ -19,16 +19,17 @@
   height: 80px;
   background-color: #42a5f5;
   position:fixed;
-  transition: .5s;
+  transition: .2s;
   z-index:1000;
   box-shadow: 0px 10px 52px -9px rgba(0,0,0,0.8);
 }
 
 .container {
+  padding: 6px 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 500px;
   font-weight: 250;
   font-size: 40px;
   color: #555;
@@ -37,7 +38,7 @@
 .container_fixed {
   width: 500px;
   margin: auto;
-  padding: 10px;
+  padding: 6px 16px;
 }
 
 
@@ -71,4 +72,27 @@
   color: white;
   transition: all .15s ease-in-out;
   border-radius: 0 5px 5px 0;
+}
+
+.login{
+  margin: 40px 80px 0 0;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.login_fixed{
+  margin: 20px 80px 20px 0;
+  font-size: 40px;
+}
+
+.parametros{
+  visibility: visible;
+
+}
+.parametros_fixed{
+  visibility: hidden;
 }
