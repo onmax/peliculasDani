@@ -97,7 +97,9 @@
 }
 
 .parametros{
-  visibility: visible;
+  padding: 3px 15px;
+  visibility: visible;  
+
 
 }
 .parametros_fixed{
