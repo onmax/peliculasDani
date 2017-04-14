@@ -19,6 +19,22 @@ body{
   margin: auto;
 }
 
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#2979ff;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+  border-radius: 5px;
+  border: 4px solid #055693;
+  visibility: hidden;
+}
+
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }

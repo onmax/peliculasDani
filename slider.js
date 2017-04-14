@@ -4,7 +4,7 @@ var carteles = $('.carteles');
 var prev = document.querySelector(".prev"),
     next = document.querySelector(".next");
 var ancho = $(window).width() * 0.7;
-var ancho_real = $(window).width() * 0.8
+var ancho_real = $(window).width() * 0.8;
 var aux = 0;
 var limite = 0;
 

@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dani torrent</title>
+  <title>mae.com</title>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="popup_login.css">
+  <link rel="stylesheet" href="popup_info.css">
   <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="peliculas.css">
   <link rel="stylesheet" href="select_menu.css">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
+  <script>
+  $(window).resize(function() {
+    location.reload();
+    window.scrollTo(0, 0);
+  });
+  </script>
 
 </head>
 <body>
@@ -20,40 +27,118 @@
       <div class="header_busqueda">
         <form action="" class="Search">
           <div class="container">
-            <input class="Search-box" type="search" id="Search-box" autocomplete="off" placeholder="Buscar película">
+            <input class="Search-box" type="search" id="Search-box" autocomplete="off" placeholder="Buscar película" autofocus>
             <label class="Search-label" for="Search-box"><i class="fa fa-search"></i></label>
           </div>
         </form>
       <div class="parametros">
-        <div class="select">
-          <select class="select_menu" name="Categorías">
-            <div class="v categ" ><option value="todas" selected>Categorías</option></div>
-            <option class="v" value="todas">TV Shows</option>
-            <option class="v" value="todas">Acción</option>
-            <option class="v" value="todas">Ganadores de algún premio</option>
-            <option class="v" value="todas">Niños y familiares</option>
-            <option class="v" value="todas">Clásicas</option>
-            <option class="v" value="todas">Comedias</option>
-            <option class="v" value="todas">Documentales</option>
-            <option class="v" value="todas">Drama</option>
-            <option class="v" value="todas">Horror</option>
-            <option class="v" value="todas">Independientes</option>
-            <option class="v" value="todas">Musicales</option>
-            <option class="v" value="todas">Románticas</option>
-            <option class="v" value="todas">Ciencia ficción</option>
-            <option class="v" value="todas">Emocionantes</option>
-            <option class="v" value="todas">Otras</option>
+          <select class="select_menu" name="categorias">
+            <option value="hide">Categorías</option>
+            <option value="shows">TV Shows</option>
+            <option value="accion">Acción</option>
+            <option value="premios">Ganadores de algún premio</option>
+            <option value="familiares">Niños y familiares</option>
+            <option value="clasicas">Clásicas</option>
+            <option value="comedias">Comedias</option>
+            <option value="documentales">Documentales</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="independiente">Independientes</option>
+            <option value="musicales">Musicales</option>
+            <option value="románticas">Románticas</option>
+            <option value="ciencia_ficcion">Ciencia ficción</option>
+            <option value="thriller">Thriller</option>
+            <option value="otras">Otras</option>
           </select>
-          <div class="fa fa-caret-down down_arrow"></div>
         </div>
-        </div>
+        <script src="select_menu.js" charset="utf-8"></script>
       </div>
-      <div class="login">
-        <div class="fa fa-user icon_login"></div>
+      <div class="popup_icon">
+        <a class="fa fa-user login_icon" href="#popup"></a>
+      </div>
+      <div id="popup" class="overlay">
+        <div class="popup">
+            <div class="ventanas">
+              <div class="form">
+                <div class="login_div login_register_div">
+                  <h3>ENTRAR</h3>
+                </div>
+                <div class="register login_register_div">
+                  <h3>REGISTRO</h3>
+                </div>
+              </div>
+              <div class="close_caja">
+                <a class="fa fa-close close_popup" href="#"></a>
+              </div>
+            </div>
+          <div class="info_popup">
+            <div class="login_box">
+              <form action="#" id="login-form">
+                <div class="login_text">
+                  <p></p>
+                  <div class="left">
+                    <label for="user">Email</label><br>
+                    <input type="email" class="email" name="email" id="user" /><br>
+                    <label for="password">Contraseña</label><br>
+                    <input type="password" class="input_text" name="password" id="pass" /><br>
+                    <input type="submit" class="submit" value="Entrar" />
+                  </div>
+                  <div class="right">
+                    <div class="connect">Conectar con</div>
+                    <a href="" class="conectar_rrss facebook">
+                      <span class="fa fa-facebook"></span>
+                    </a><br>
+                    <a href="" class="conectar_rrss twitter">
+                      <span class="fa fa-twitter"></span>
+                    </a><br>
+                    <a href="" class="conectar_rrss google-plus">
+                      <span class="fa fa-google-plus"></span>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="register_box">
+              <form action="#" id="register-form">
+                <div class="login_text">
+                  <p></p>
+                  <div class="left">
+                    <label for="user">Usuario</label><br>
+                    <input type="text" class="input_text" name="user" id="user_register" /><br>
+                    <label for="user">Email</label><br>
+                    <input type="email" class="input_text" name="user" id="email_register" /><br>
+                    <label for="password">Contraseña</label><br>
+                    <input type="password" class="input_text" name="password" id="pass_register" /><br>
+                    <input type="submit" class="submit" value="Entrar" />
+                  </div>
+                  <div class="right">
+                    <div class="connect">Conectar con</div>
+                    <a href="" class="conectar_rrss facebook">
+                      <span class="fa fa-facebook"></span>
+                    </a><br>
+                    <a href="" class="conectar_rrss twitter">
+                      <span class="fa fa-twitter"></span>
+                    </a><br>
+                    <a href="" class="conectar_rrss google-plus">
+                      <span class="fa fa-google-plus"></span>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
+  <script src="popup.js" charset="utf-8"></script>
+  <script src="popup_info.js" charset="utf-8"></script>
 
+  <div class="botones_acceso">
+    <span class="ir-arriba fa fa-chevron-up"></span>
+  </div>
+
+  <script src="goUp.js" charset="utf-8"></script>
 
   <script src="sticky_menu.js" charset="utf-8"></script>
   <div class="all_content">
@@ -87,6 +172,8 @@
   </div>
   <hr>
   <script src="slider.js" charset="utf-8"></script>
+
+
 
 <div class="busqueda">
   <h3 class="peliculas_title">Películas encontradas:</h3>
@@ -297,7 +384,7 @@
 <footer>
   <div class="footer">
     <div class="fa fa-twitter rrss tw"></div>
-    <div class="fa fa-facebook rrss fb"></div>
+    <div class="fa fa-telegram rrss tg"></div>
   </div>
 </footer>
 </body>

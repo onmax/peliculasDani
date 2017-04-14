@@ -49,12 +49,10 @@
 .prev{
   left: 0;
   visibility: hidden;
-  transition: .5s;
 }
 
 .next{
   right: 0;
-  
 }
 
 hr{
