@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block body%}
+<div class="all_content">
+  <h3 class="populares_title">Las más descargadas:</h3>
+    {% block slider %}
+    {% endblock}
+
+    <hr>
+
+    {% block resultado_tarjeta %}
+    {% endblock %}
+</div>
+{% endblock %}
