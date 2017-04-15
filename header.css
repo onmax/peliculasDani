@@ -2,10 +2,16 @@
   width: 100%;
   height: 150px;
   background-color: #42a5f5;
-  animation: fadein .5s;
+  -webkit-animation: fadein .5s;
+          animation: fadein .5s;
   transition: .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 
 }
 
@@ -26,9 +32,16 @@
 
 .container {
   padding: 6px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 500px;
   font-weight: 250;
   font-size: 40px;
@@ -54,7 +67,9 @@
 }
 
 .Search-box:focus {
-  flex: 1 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
   outline: 0;
   box-shadow: 0 3px 15px -1px rgba(0, 0, 0, .5);
 }
@@ -77,8 +92,12 @@
 .popup_icon{
   margin: 40px 80px 0 0;
   height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 45px;
   cursor: pointer;
   color: #fff;
@@ -98,7 +117,7 @@
 
 .parametros{
   padding: 3px 15px;
-  visibility: visible;  
+  visibility: visible;
 
 
 }
